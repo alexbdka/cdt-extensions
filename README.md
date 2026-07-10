@@ -1,28 +1,57 @@
-# Confrérie des Traducteurs – Extensions
+# CdT Extensions
 
-Extension non officielle qui améliore l’usage du site de la Confrérie des Traducteurs (CdT) et de Nexus Mods.
+Unofficial Chrome extension for Nexus Mods, Confrerie des Traducteurs (CdT), and Mod Organizer 2 workflows.
 
-## Fonctionnalités
+## Features
 
-- Recherche d’une traduction CdT depuis une page mod Nexus.
-- Lien direct de téléchargement CdT vers Mod Organizer 2 (MODL).
-- Boutons repositionnables et paramètres persistés localement.
+- Finds a CdT translation from a Nexus Mods mod page.
+- Builds a Mod Organizer 2 compatible `modl://` download link from supported CdT mod pages.
+- Provides movable buttons with settings stored locally in the browser.
 
-## Installation (mode développeur)
+## Install In Developer Mode
 
-1. Ouvrir `chrome://extensions`.
-2. Activer le mode développeur.
-3. Charger le dossier `CdT-extensions`.
+1. Install dependencies with `npm install`.
+2. Build the extension with `npm run build`.
+3. Open `chrome://extensions`.
+4. Enable developer mode.
+5. Load the generated `dist/` folder as an unpacked extension.
 
-## Confidentialité
+## Development
 
-La politique de confidentialité est publiée ici :  
-`https://alexbdka.github.io/cdt-extensions/privacy-policy.html`
+Run the full quality check (typecheck, lint, format, tests):
+
+```sh
+npm run check
+```
+
+Build the Chrome-loadable extension:
+
+```sh
+npm run build
+```
+
+Run tests in watch mode during development:
+
+```sh
+npm run test:watch
+```
+
+The source lives in `src/`; `npm run build` bundles the TypeScript entrypoints with esbuild and writes the Chrome-loadable extension to `dist/`. The generated `dist/` folder is ignored by Git.
+
+## Privacy Policy
+
+The public privacy policy is published with GitHub Pages:
+
+`https://alexbdka.github.io/cdt-extensions/privacy-policy/`
 
 ## Support
 
-Contact : `aaltchv@proton.me`
+Contact: `aaltchv@proton.me`
 
-## Licence
+## Contributing
 
-Voir `LICENSE.md` et `licenses/` pour les composants tiers.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for project structure and coding conventions.
+
+## License
+
+See [LICENSE.md](LICENSE.md) and [licenses/](licenses/) for project and third-party licenses.
