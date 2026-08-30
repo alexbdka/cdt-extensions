@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 type LogLevel = "info" | "warn" | "error" | "success";
 
 export type CdtLogger = {
@@ -9,10 +10,10 @@ export type CdtLogger = {
 
 export function createLogger(prefix: string, getDebug?: () => boolean): CdtLogger {
   const emoji: Record<LogLevel, string> = {
-    info: "📘",
-    warn: "⚠️",
-    error: "🔴",
-    success: "✅",
+    info: "[INFO]",
+    warn: "[WARN]",
+    error: "[ERROR]",
+    success: "[SUCCESS]",
   };
 
   function log(level: LogLevel, message: string, data?: unknown): void {
