@@ -1,0 +1,52 @@
+{
+  "manifest_version": 3,
+  "name": "Confrérie des Traducteurs - Extensions",
+  "version": "1.2.1",
+  "description": "Extensions non officielles pour la Confrérie des Traducteurs",
+  "icons": {
+    "32": "assets/icons/logo_32.png",
+    "48": "assets/icons/logo_48.png",
+    "64": "assets/icons/logo_64.png",
+    "128": "assets/icons/logo_128.png"
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": "assets/icons/logo_128.png"
+  },
+  "permissions": ["storage", "scripting"],
+  "host_permissions": [
+    "https://www.confrerie-des-traducteurs.fr/*",
+    "https://*.confrerie-des-traducteurs.com/*"
+  ],
+  "background": {
+    "service_worker": "background/service-worker.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.nexusmods.com/*/mods/*"],
+      "css": ["styles/widget.css"],
+      "js": ["scripts/translation-finder.js"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": ["https://www.confrerie-des-traducteurs.fr/*/mods/*"],
+      "css": ["styles/widget.css"],
+      "js": ["scripts/mo2-download.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "assets/icons/logo_32.png",
+        "assets/icons/logo_48.png",
+        "assets/icons/logo_64.png",
+        "assets/icons/logo_128.png",
+        "templates/translation-finder.html",
+        "templates/mo2-download.html",
+        "assets/fonts/Poppins-Regular.ttf"
+      ],
+      "matches": ["https://www.nexusmods.com/*", "https://www.confrerie-des-traducteurs.fr/*"]
+    }
+  ]
+}

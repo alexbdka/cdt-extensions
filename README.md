@@ -1,28 +1,25 @@
-# Confrérie des Traducteurs – Extensions
+# CdT Extensions
 
-Extension non officielle qui améliore l’usage du site de la Confrérie des Traducteurs (CdT) et de Nexus Mods.
+Unofficial Chrome extension for the [Confrérie des Traducteurs](https://www.confrerie-des-traducteurs.fr/).
 
-## Fonctionnalités
+---
 
-- Recherche d’une traduction CdT depuis une page mod Nexus.
-- Lien direct de téléchargement CdT vers Mod Organizer 2 (MODL).
-- Boutons repositionnables et paramètres persistés localement.
+It provides two features:
 
-## Installation (mode développeur)
+- find a CdT translation from a Nexus Mods page;
+- generate a Mod Organizer 2 `modl://` download link from a CdT mod page.
 
-1. Ouvrir `chrome://extensions`.
-2. Activer le mode développeur.
-3. Charger le dossier `CdT-extensions`.
+## Local installation
 
-## Confidentialité
+1. Install dependencies with `npm install`.
+2. Build the extension with `npm run build`.
+3. Open `chrome://extensions`, enable **Developer mode**, and select **Load unpacked**.
+4. Choose the generated `dist/` directory.
 
-La politique de confidentialité est publiée ici :  
-`https://alexbdka.github.io/cdt-extensions/privacy-policy.html`
+The public [privacy policy](https://alexbdka.github.io/cdt-extensions/privacy-policy.html) is hosted on GitHub Pages.
 
-## Support
+## Project information
 
-Contact : `aaltchv@proton.me`
-
-## Licence
-
-Voir `LICENSE.md` et `licenses/` pour les composants tiers.
+- [Contributing](CONTRIBUTING.md)
+- [Changelog](CHANGELOG.md)
+- [License](LICENSE.md)

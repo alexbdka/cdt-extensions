@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 24px;
+
+  background: #000;
+  color: #fff;
+
+  font-family: "JetBrains Mono", monospace;
+  line-height: 1.5;
+}
+
+body > * {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 8px;
+  margin-bottom: 24px;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a,
+a {
+  color: #fff;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav a:hover {
+  background: #fff;
+  color: #000;
+}
+
+main {
+  max-width: 900px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h1,
+h2 {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+h1::before {
+  content: "# ";
+}
+
+h2::before {
+  content: "## ";
+}
+
+p {
+  max-width: 700px;
+}
+
+ul {
+  padding-left: 20px;
+  list-style: none;
+}
+
+li::before {
+  content: "→ ";
+}
+
+li {
+  margin-bottom: 16px;
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+
+.item-label,
+.item-detail {
+  display: block;
+}
+
+.item-label {
+  font-weight: 600;
+}
+
+.item-detail {
+  color: #c8c8c8;
+  font-style: italic;
+}
+
+.stacked-list li {
+  position: relative;
+  padding-left: 20px;
+}
+
+.stacked-list li::before {
+  position: absolute;
+  left: 0;
+}
+
+footer {
+  border-top: 1px solid #fff;
+  padding-top: 8px;
+  margin-top: 60px;
+
+  font-size: 0.85rem;
+}
