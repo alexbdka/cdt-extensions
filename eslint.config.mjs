@@ -6,7 +6,7 @@ import prettierPlugin from "eslint-plugin-prettier/recommended";
 
 export default defineConfig([
   {
-    ignores: ["dist/", "node_modules/", "docs/_layouts/"],
+    ignores: ["dist/", "node_modules/"],
   },
   eslint.configs.recommended,
   ...tseslint.configs.recommendedTypeChecked,

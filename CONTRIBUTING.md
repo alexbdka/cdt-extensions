@@ -22,7 +22,7 @@ npm run build
 - `src/popup/`: extension popup.
 - `src/templates/` and `src/styles/`: content-script UI resources.
 - `tooling/`: build tooling.
-- `docs/`: GitHub Pages privacy policy.
+- `www/`: static GitHub Pages website.
 
 Keep feature entrypoints thin, put reusable logic in focused modules, and add unit tests for
 pure business logic. Use `src/shared/browser.ts` for extension API access.

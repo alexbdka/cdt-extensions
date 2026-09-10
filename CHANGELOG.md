@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.2.2 - 2026-09-10
+
+### Changed
+
+- Migrate the privacy policy from 'docs/' to 'www/'.
+
 ## 1.2.1 - 2026-08-21
 
 ### Changed

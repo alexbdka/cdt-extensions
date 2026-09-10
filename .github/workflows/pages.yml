@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - "docs/**"
+      - "www/**"
       - ".github/workflows/pages.yml"
   workflow_dispatch:
 
@@ -28,14 +28,10 @@ jobs:
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
-      - name: Build with Jekyll
-        uses: actions/jekyll-build-pages@v1
-        with:
-          source: docs
-          destination: _site
-
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
+        with:
+          path: www
 
   deploy:
     environment:

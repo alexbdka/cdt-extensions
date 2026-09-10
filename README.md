@@ -16,7 +16,7 @@ It provides two features:
 3. Open `chrome://extensions`, enable **Developer mode**, and select **Load unpacked**.
 4. Choose the generated `dist/` directory.
 
-The public [privacy policy](https://alexbdka.github.io/cdt-extensions/privacy-policy/) is hosted on GitHub Pages.
+The public [privacy policy](https://alexbdka.github.io/cdt-extensions/privacy-policy.html) is hosted on GitHub Pages.
 
 ## Project information
 
