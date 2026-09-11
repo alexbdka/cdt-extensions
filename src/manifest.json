@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Confrérie des Traducteurs - Extensions",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Extensions non officielles pour la Confrérie des Traducteurs",
   "icons": {
     "32": "assets/icons/logo_32.png",

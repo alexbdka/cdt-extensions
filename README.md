@@ -1,6 +1,7 @@
-# CdT Extensions
+# Confrérie des Traducteurs – Extensions
 
-Unofficial Chrome extension for the [Confrérie des Traducteurs](https://www.confrerie-des-traducteurs.fr/).
+Unofficial Chrome extension for the [Confrérie des Traducteurs](https://www.confrerie-des-traducteurs.fr/).  
+_Firefox support is kindly provided by [@Lart-Iste](https://github.com/Lart-Iste/cdt-extensions-ff)._
 
 ---
 
